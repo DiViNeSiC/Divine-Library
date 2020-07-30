@@ -8,7 +8,7 @@ const app = express()
 
 const indexRouter = require('./routes/index')
 
-mongoose.connect('mongodb://localhost/ss', {
+mongoose.connect(process.env.DATABASE_URL, {
     useNewUrlParser: true, 
     useUnifiedTopology: true,
     useCreateIndex: true

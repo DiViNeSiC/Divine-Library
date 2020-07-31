@@ -7,6 +7,7 @@ const mongoose = require('mongoose')
 const app = express()
 
 const indexRouter = require('./routes/index')
+const authorsRouter = require('./routes/authors')
 
 mongoose.connect(process.env.DATABASE_URL, {
     useNewUrlParser: true, 
@@ -25,7 +26,12 @@ app.set('layout', 'layouts/layout')
 
 app.use(expressLayouts)
 app.use(express.static('public'))
+app.use(express.urlencoded({
+    extended: false,
+    limit: '10mb'
+}))
 
 app.use('/', indexRouter)
+app.use('/authors', authorsRouter)
 
 app.listen(process.env.PORT || 3000)

@@ -1,10 +1,10 @@
 const express = require('express')
 const router = express.Router()
 const Author = require('../models/Author')
-const filterAuthors = require('../middlewares/filterAuthors')
+const filter = require('../middlewares/filter')
 
 //All Authors Route
-router.get('/', filterAuthors, async (req, res) => {
+router.get('/', filter('authors'), async (req, res) => {
     try {
         const authors = await Author.find(req.searchOptions)
         res.render('Authors/index', {

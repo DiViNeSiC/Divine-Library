@@ -8,6 +8,7 @@ const app = express()
 
 const indexRouter = require('./routes/index')
 const authorsRouter = require('./routes/authors')
+const booksRouter = require('./routes/books')
 
 mongoose.connect(process.env.DATABASE_URL, {
     useNewUrlParser: true, 
@@ -33,5 +34,6 @@ app.use(express.urlencoded({
 
 app.use('/', indexRouter)
 app.use('/authors', authorsRouter)
+app.use('/books', booksRouter)
 
 app.listen(process.env.PORT || 3000)

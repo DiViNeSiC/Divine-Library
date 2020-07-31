@@ -1,20 +1,22 @@
+const saveCover = require("./saveCover")
+
 function getBookParams(req, res, next) {
-    const fileName = req.file != null ? req.file.filename : null
     const {
         title,
         author,
         publishDate,
         pageCount,
-        description
+        description,
+        cover
     } = req.body
     const book = {
         title: title,
         author: author,
         publishDate: new Date(publishDate),
         pageCount: pageCount,
-        coverImage: fileName,
         description: description
     }
+    saveCover(book, cover)
     req.book = book
     next()
 }

@@ -26,7 +26,7 @@ app.set('view engine', 'ejs')
 app.set('layout', 'layouts/layout')
 
 app.use(expressLayouts)
-app.use(express.static('public'))
+app.use(express.static('./public'))
 app.use(express.urlencoded({
     extended: false,
     limit: '10mb'

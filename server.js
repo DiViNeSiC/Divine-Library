@@ -3,6 +3,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 const express = require('express')
 const expressLayouts = require('express-ejs-layouts')
+const methodOverride = require('method-override')
 const mongoose = require('mongoose')
 const app = express()
 
@@ -31,6 +32,8 @@ app.use(express.urlencoded({
     extended: false,
     limit: '10mb'
 }))
+app.use(methodOverride('_method'))
+
 
 app.use('/', indexRouter)
 app.use('/authors', authorsRouter)

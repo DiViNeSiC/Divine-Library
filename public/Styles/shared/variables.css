@@ -1,0 +1,23 @@
+:root {
+    --color-base-hue: 200;
+    --color-danger-hue-offset: 180;
+    --color-danger-hue: calc(var(--color-base-hue) - var(--color-danger-hue-offset));
+    --color-background-light: hsl(var(--color-base-hue), 100%, 16%);
+    --color-background-dark: hsl(var(--color-base-hue), 100%, 8%);
+    --color-text-light: hsl(var(--color-base-hue), 100%, 87%);
+    --nav-title-font-size: 2.5rem;
+    --nav-title-font-weight: bold;
+    --nav-link-font-weight: 300;
+    --color-button-border: black;
+    --color-button-primary-text: hsl(var(--color-base-hue), 100%, 20%);
+    --color-button-primary-text-dark: hsl(var(--color-base-hue), 100%, 10%);
+    --color-button-primary-background: hsl(var(--color-base-hue), 100%, 83%);
+    --color-button-primary-background-dark: hsl(var(--color-base-hue), 100%, 73%);
+    --color-button-success-text: black;
+    --color-button-success-background: hsl(150, 100%, 35%);
+    --color-button-success-text-light: rgb(84, 250, 150);
+    --color-button-success-background-dark: hsl(150, 100%, 25%);
+    --color-button-danger-text: hsl(var(--color-danger-hue), 100%, 20%);
+    --color-button-danger-background: hsl(var(--color-danger-hue), 100%, 83%);
+    --color-button-danger-background-dark: hsl(var(--color-danger-hue), 100%, 73%);
+}

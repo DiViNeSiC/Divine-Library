@@ -1,0 +1,53 @@
+.button {
+    border: 1px solid var(--color-button-border);
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+    font-family: 'Gotham Rounded';
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: .3s;
+}
+
+.button-row {
+    display: flex;
+    align-items: flex-start;
+}
+
+.button-row > * {
+    margin-left: 1rem;
+}
+
+.button-row > *:first-child {
+    margin-left: 0;
+}
+
+.button-primary {
+    color: var(--color-button-primary-text);
+    background-color: var(--color-button-primary-background);
+}
+
+.button-success {
+    color: var(--color-button-success-text);
+    background-color: var(--color-button-success-background);
+}
+
+.button-danger {
+    color: var(--color-button-danger-text);
+    background-color: var(--color-button-danger-background);
+}
+
+.button-primary:hover {
+    color: var(--color-button-primary-text-dark);
+    background-color: var(--color-button-primary-background-dark);
+}
+
+.button-success:hover {
+    color: var(--color-button-success-text-light);
+    background-color: var(--color-button-success-background-dark);
+}
+
+.button-danger:hover {
+    background-color: var(--color-button-danger-background-dark);
+}

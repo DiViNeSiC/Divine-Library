@@ -1,11 +1,12 @@
 const rootStyles = window.getComputedStyle(document.documentElement)
 
+document.getElementById('main-css').addEventListener('load', ready)
+
 if (rootStyles.getPropertyValue('--book-cover-width-large') != null && 
     rootStyles.getPropertyValue('--book-cover-width-large') !== '') {
-        ready()
-} else {
-    document.getElementById('main-css').addEventListener('load', ready)
+        return ready()
 }
+
 
 function ready() {
     const coverWidth = 

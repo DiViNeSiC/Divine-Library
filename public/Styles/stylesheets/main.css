@@ -2,6 +2,11 @@
 @import '../shared/variables.css';
 @import '../shared/header.css';
 @import '../shared/buttons.css';
+@import '../shared/form.css';
+@import '../shared/authors-list.css';
+@import '../shared/books-list.css';
+@import '../shared/books.css';
+@import '../shared/media.css';
 
 :root {
     font-family: 'Gotham Rounded';
@@ -32,4 +37,8 @@ body {
 .page-header {
     font-size: 2rem;
     font-weight: 500;
+}
+
+.error-message {
+    color: hsl(var(--color-danger-hue), 100%, 50%);
 }

@@ -1,0 +1,193 @@
+@media all and (max-width: 670px) {
+    .header-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-nav li {
+        width: 160px;
+    }
+
+    .page-header {
+        text-align: center;
+    }
+    
+    .button {
+        font-size: .85rem;
+    }
+
+    .button-row {
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .button-media-column form{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-media-links {
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-media-links a {
+        margin: 0 5px;
+    }
+
+    .author-container {
+        flex-direction: column;
+    }
+
+    .book-view {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .book-pic-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .book-info-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 20px;
+    }
+
+    .book-info-grid .book-info-label-answer,
+    .book-info-grid .book-info-label {
+        width: 100%;
+        text-align: center;
+    }
+
+    .book-info-grid .book-info-label-answer {
+        margin-top: -15px;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media all and (max-width: 626px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-desk {
+        flex-direction: row;
+    }
+
+    .form-desk .form-item:last-child {
+        margin-left: 10px;
+    }
+    
+    .form-row-end {
+        align-items: flex-end;
+    }
+    
+    .form-item {
+        margin-left: 0;
+    }
+
+    .button-row {
+        flex-direction: row;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .form-desk {
+        flex-direction: column;
+    }
+
+    .form-desk .filepond {
+        width: 100% !important;
+    }
+
+    .form-desk textarea {
+        height: 14rem;
+        margin-left: -10px;
+    }
+}
+
+@media all and (max-width: 440px) {
+    .button-media-column {
+        align-items: stretch;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .button-media-column a {
+        width: 80%;
+        margin-left: 0;
+        margin: 5px 0;
+    }
+
+    .button-media-column > * {
+        margin: 5px 0;
+    }
+
+    .button-media-column form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-media-links {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+}
+
+@media all and (max-width: 313px) {
+    .button-column-reverse {
+        flex-direction: column-reverse !important;
+    }
+
+    .button-column-reverse .button {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin: 2px 0 !important;
+    }
+
+    .button-column {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .button-column a {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .button-column form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .button-column button {
+        margin-left: 0;
+        width: 100%;
+        margin: 10px 0;
+    }
+}

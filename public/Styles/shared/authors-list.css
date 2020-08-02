@@ -1,0 +1,19 @@
+.authors-flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.author-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5rem 0;
+    border: 1.5px solid var(--author-border-color);
+    padding: 10px;
+    border-radius: .5rem;
+}
+
+.author-name {
+    font-size: 1.2rem;
+}

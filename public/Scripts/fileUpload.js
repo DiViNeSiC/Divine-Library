@@ -3,10 +3,13 @@ const rootStyles = window.getComputedStyle(document.documentElement)
 set()
 
 function set() {
+    console.log('set');
     if (rootStyles.getPropertyValue('--book-cover-width-large') != null && 
         rootStyles.getPropertyValue('--book-cover-width-large') !== '') {
-        ready()
+            console.log('ready');
+            ready()
     } else {
+        console.log('setAgain');
         setAgain()
     }
 }

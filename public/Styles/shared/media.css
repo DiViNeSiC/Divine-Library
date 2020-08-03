@@ -73,6 +73,13 @@
         text-align: center;
     }
 
+    .form-item-description label,
+    .form-item-description textarea {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+
     .book-info-grid .book-info-label-answer {
         margin-top: -15px;
         margin-bottom: 15px;

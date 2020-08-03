@@ -61,12 +61,6 @@
     border-color: var(--form-input-border-color-focus);
 }
 
-.form-item-description label,
-.form-item-description textarea {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 .filepond--root {
     font-family: 'Gotham Rounded' !important;
     margin-bottom: 0 !important;

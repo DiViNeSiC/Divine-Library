@@ -1,9 +1,15 @@
 const rootStyles = window.getComputedStyle(document.documentElement)
-if (rootStyles.getPropertyValue('--book-cover-width-large') != null && 
-    rootStyles.getPropertyValue('--book-cover-width-large') !== '') {
+
+set()
+
+function set() {
+    if (rootStyles.getPropertyValue('--book-cover-width-large') != null && 
+        rootStyles.getPropertyValue('--book-cover-width-large') !== '') {
         ready()
+    } else {
+        setAgain()
+    }
 }
-document.getElementById('main-css').addEventListener('load', ready)
 
 
 
@@ -26,4 +32,12 @@ function ready() {
     })
     
     FilePond.parse(document.body)
+}
+
+function setAgain() {
+    document.getElementById('main-css').addEventListener('load', () => {
+        ready()
+        console.log('Ready');
+    })
+    set()
 }

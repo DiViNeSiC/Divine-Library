@@ -39,5 +39,4 @@ function setAgain() {
         ready()
         console.log('Ready');
     })
-    set()
 }
